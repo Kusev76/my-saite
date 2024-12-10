@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Строительная организация</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Строительная организация</h1>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#projects">Проекты</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>О нас</h2>
+            <p>Мы - ведущая строительная организация, предоставляющая услуги строительства, ремонта и проектирования объектов. Наша команда обеспечивает высокое качество и надежность.</p>
+        </div>
+    </section>
+
+    <section id="services" class="section bg-light">
+        <div class="container">
+            <h2>Услуги</h2>
+            <div class="services">
+                <div class="service-card">
+                    <h3>Строительство</h3>
+                    <p>Строительство жилых и коммерческих зданий с использованием современных технологий.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Ремонт</h3>
+                    <p>Качественный ремонт помещений любой сложности.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Проектирование</h3>
+                    <p>Создание индивидуальных проектов для любых объектов.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Наши проекты</h2>
+            <p>Посмотрите на наши выполненные проекты:</p>
+            <ul class="projects-list">
+                <li>Жилой комплекс "Солнечный"</li>
+                <li>Торговый центр "Городской"</li>
+                <li>Коттеджный поселок "Уютный уголок"</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2>Контакты</h2>
+            <form class="contact-form">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+
+                <label for="message">Сообщение</label>
+                <textarea id="message" name="message" placeholder="Введите сообщение" required></textarea>
+
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Строительная организация. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>

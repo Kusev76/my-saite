@@ -1,0 +1,270 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Шапка */
+.header {
+    background: linear-gradient(90deg, #4facfe, #00f2fe); /* Горизонтальный градиент */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.nav-list li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Разделы */
+.section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.section.bg-light {
+    background-color: #f4f4f4;
+}
+
+.section h2 {
+    font-size: 2rem;
+    color: #0078d7;
+    margin-bottom: 20px;
+}
+
+/* Карточки услуг */
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.service-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h3 {
+    margin-top: 0;
+    color: #0078d7;
+}
+
+.service-card p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* Список проектов */
+.projects-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+.projects-list li {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Контактная форма */
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-form .btn {
+    padding: 10px;
+    background: #0078d7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form .btn:hover {
+    background: #005bb5;
+}
+
+/* Футер */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 90%;
+    }
+}
+/* Базовые стили (Desktop по умолчанию) уже описаны выше */
+
+/* Адаптация для планшетов (ширина экрана до 768px) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 90%; /* Увеличиваем ширину карточек на планшете */
+    }
+
+    .contact-form {
+        width: 90%; /* Уменьшаем ширину формы */
+    }
+}
+
+/* Адаптация для смартфонов (ширина экрана до 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9rem; /* Уменьшаем общий размер текста */
+    }
+
+    header {
+        padding: 15px 0;
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* Уменьшаем размер заголовка */
+    }
+
+    .nav-list li a {
+        font-size: 0.85rem;
+        padding: 8px 12px; /* Уменьшаем отступы в меню */
+    }
+
+    .services {
+        flex-direction: column;
+    }
+
+    .service-card {
+        padding: 15px;
+        width: 100%; /* Карточки занимают всю ширину экрана */
+        box-shadow: none; /* Убираем тень для упрощения дизайна */
+    }
+
+    .contact-form {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .footer {
+        font-size: 0.8rem; /* Уменьшаем размер текста в футере */
+    }
+}
+
+/* Адаптация для больших экранов (ширина экрана больше 1200px) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .services {
+        justify-content: space-between; /* Карточки равномерно распределены */
+    }
+
+    .service-card {
+        width: 28%; /* Уменьшаем ширину карточек для большего количества на одном ряду */
+    }
+}
